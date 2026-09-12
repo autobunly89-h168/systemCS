@@ -1,0 +1,6 @@
+{
+  "name": "CS Daily System",
+  "description": "Customer Support Daily Management System with multi-website auto separation, daily registration, search, and reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

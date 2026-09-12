@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@keyframes marquee-rtl {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-full-pass {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee-rtl {
+  display: flex;
+  width: max-content;
+  animation: marquee-rtl 25s linear infinite;
+}
+
+.animate-marquee-full-pass {
+  display: flex;
+  width: max-content;
+  animation: marquee-full-pass 30s linear infinite;
+}
+
+.animate-marquee-rtl:hover,
+.animate-marquee-full-pass:hover {
+  animation-play-state: paused;
+}
+
+/* 3D Glass & Glow Utilities */
+.glow-3d-border {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5),
+              0 0 15px rgba(168, 85, 247, 0.25),
+              inset 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+.glow-3d-badge {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3),
+              inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
